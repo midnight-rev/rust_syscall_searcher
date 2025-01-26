@@ -1,13 +1,17 @@
 [package]
 name = "syscall_searcher"
+authors = ["Midnight Reverser <midnight.reverser@outlook.com>"]
+categories = ["command-line-utilities"]
+keywords = ["syscall", "security", "helper"]
 version = "0.1.0"
 edition = "2021"
 license = "GPL-3.0-or-later"
+repository = "https://github.com/midnight-rev/rust_syscall_searcher"
 description = "A tool to search information of syscalls based on the API https://api.syscall.sh. You can search for a syscall number or name and filter for an architecture."
+readme = "README.md"
 
 [dependencies]
 anyhow = "1.0.95"
 clap = { version = "4.5.23", features = ["derive"] }
-json = "0.12.4"
 reqwest = { version = "0.12.9", features = ["blocking"] }
 serde_json = "1.0.134"
