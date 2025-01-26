@@ -9,7 +9,7 @@ use syscall::{RsysearcherError, SyscallForArch};
 #[command(version, about, long_about = None)]
 struct Args {
     /// specify to use colors on terminal or not
-    #[arg(short, long, default_value_t = true)]
+    #[arg(short, long, default_value_t = false)]
     color: bool,
 
     /// architecture that you are working on
