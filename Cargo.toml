@@ -1,0 +1,13 @@
+[package]
+name = "syscall_searcher"
+version = "0.1.0"
+edition = "2021"
+license = "GPL-3.0-or-later"
+description = "A tool to search information of syscalls based on the API https://api.syscall.sh. You can search for a syscall number or name and filter for an architecture."
+
+[dependencies]
+anyhow = "1.0.95"
+clap = { version = "4.5.23", features = ["derive"] }
+json = "0.12.4"
+reqwest = { version = "0.12.9", features = ["blocking"] }
+serde_json = "1.0.134"
